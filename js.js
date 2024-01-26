@@ -2,10 +2,10 @@ loadEverything();
 	
 function loadEverything() {
     if (localStorage.getItem("mx2-ct1") === null) {
-    localStorage.setItem("mx2-ct1", JSON.stringify('[{"title":"Test 1","marks":[15,30]},{"title":"Test 2","marks":[20,30]},{"title":"Test 3","marks":[25,30]},{"title":"Test 4","marks":[30,30]}]'))
+    localStorage.setItem("mx2-ct1", '[{"title":"Test 1","marks":[15,30]},{"title":"Test 2","marks":[20,30]},{"title":"Test 3","marks":[25,30]},{"title":"Test 4","marks":[30,30]}]')
     }
     if (localStorage.getItem("mx1-ct1") === null) {
-    localStorage.setItem("mx1-ct1", JSON.stringify('[{"title":"Test 1","marks":[15,30]},{"title":"Test 2","marks":[20,30]},{"title":"Test 3","marks":[25,30]},{"title":"Test 4","marks":[30,30]}]'))
+    localStorage.setItem("mx1-ct1", '[{"title":"Test 1","marks":[15,30]},{"title":"Test 2","marks":[20,30]},{"title":"Test 3","marks":[25,30]},{"title":"Test 4","marks":[30,30]}]')
     }
     
     let mx2ct1 = "<input id='mx2-ct1-input' type='text' size='50' value='" + localStorage.getItem("mx2-ct1") + "'><input id='mx2-ct1-submit' type='submit'>"
